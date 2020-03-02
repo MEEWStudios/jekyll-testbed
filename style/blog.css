@@ -54,7 +54,7 @@
 }
 
 .container.title > div:first-child h2:first-child {
-	--container-title-background: #FFF;
+	--container-title-background: var(--theme-tertiary-background);
 	--container-title-color: #000;
 	
 	user-select: none;
