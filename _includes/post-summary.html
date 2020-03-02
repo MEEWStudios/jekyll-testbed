@@ -4,6 +4,6 @@
 	</div>
 	{{include.post.content | markdownify | truncatewords: 40}}
 	<div>
-		<a class='button' href='{{include.post.url}}'>Read</a>
+		<a class='button' href='{{site.baseurl}}{{include.post.url}}'>Read</a>
 	</div>
 </div>
