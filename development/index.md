@@ -10,7 +10,7 @@ title: Development Blog
 			<h2>{{forloop.index}}</h2>
 			<h2>{{post.title}}</h2>
 		</div>
-		{{post.content | markdownify | truncatewords: 40}}
+		{{post.content | truncatewords: 40}}
 		<div>
 			<a class='button' href='{{page.url}}'>Read</a>
 		</div>
