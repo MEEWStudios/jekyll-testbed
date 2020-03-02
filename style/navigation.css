@@ -22,7 +22,6 @@ header a {
 	display: inline-flex;
 	margin-right: calc(var(--navigation-angle-width) + var(--navigation-spacing));
 	padding: 0 1.25em;
-	height: var(--navigation-height);
 	background: var(--navigation-background);
 	color: var(--navigation-color);
 	font-size: 1.1em;
@@ -31,8 +30,15 @@ header a {
 	box-sizing: border-box;
 }
 
-header a:first-child,
-header > div:first-child {
+header > div {
+	margin: auto 0;
+}
+
+header a {
+	height: var(--navigation-height);
+}
+
+header a:first-of-type {
 	margin-left: calc(var(--navigation-angle-width) + var(--navigation-spacing));
 }
 
@@ -73,8 +79,4 @@ header a.active {
 
 header a div {
 	margin: auto;
-}
-
-header > div {
-	margin: auto 0;
 }
