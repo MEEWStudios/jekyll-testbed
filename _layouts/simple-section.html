@@ -8,14 +8,7 @@
 		<script src='{{site.baseurl}}/script/index.js'></script>
 	</head>
 	<body>
-		<header>
-			<a href='{{site.baseurl}}/'><div>Home</div></a>
-			<a href='{{site.baseurl}}/about.html'><div>About</div></a>
-			<a href='{{site.baseurl}}/members.html'><div>Members</div></a>
-			<a href='{{site.baseurl}}/art.html'><div>Concept Art</div></a>
-			<a href='{{site.baseurl}}/development/' data-loose><div>Development Blog</div></a>
-			<a href='{{site.baseurl}}/final.html'><div>Final Game</div></a>
-		</header>
+		{% include header.html %}
 		<main>
 			{% for section in page.sections %}
 			<h1>{{section[0]}}</h1>
@@ -24,9 +17,6 @@
 			</div>
 			{% endfor %}
 		</main>
-		<footer>
-			<div>MEEWStudios, Spring 2020</div>
-			<div>Part of an ICS 485 assignment.</div>
-		</footer>
+		{% include footer.html %}
 	</body>
 </html>
