@@ -1,10 +1,12 @@
 ---
-layout: simple
+layout: base
 title: Development Blog
 ---
-{% assign blog_posts = site.pages | where: "layout", "blog" | sort: "date" | reverse %}
-{% for post in blog_posts %}
-	{% unless post.draft %}
-		{% include post-summary.html post=post index=forloop.index %}
-	{% endunless %}
-{% endfor %}
+<main>
+	{% assign blog_posts = site.pages | where: "layout", "blog" | sort: "date" | reverse %}
+	{% for post in blog_posts %}
+		{% unless post.draft %}
+			{% include post-summary.html post=post index=forloop.index %}
+		{% endunless %}
+	{% endfor %}
+</main>
