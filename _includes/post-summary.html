@@ -1,0 +1,10 @@
+<div class='container title'>
+	<div>
+		<h2>{{include.index}}</h2>
+		<h2>{{include.post.title}}</h2>
+	</div>
+	{{include.post.content | markdownify | truncatewords: 40}}
+	<div>
+		<a class='button' href='{{include.post.url}}'>Read</a>
+	</div>
+</div>
