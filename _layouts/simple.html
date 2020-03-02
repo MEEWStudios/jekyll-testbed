@@ -1,17 +1,6 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<meta charset='UTF8'>
-		<title>{% if page.title %}{{page.title}} - {% endif %}{{site.title}}</title>
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap' rel='stylesheet'>
-		<link href='{{site.baseurl}}/style/index.css' rel='stylesheet'>
-		<script src='{{site.baseurl}}/script/index.js'></script>
-	</head>
-	<body>
-		{% include header.html %}
-		<main>
-			{{content}}
-		</main>
-		{% include footer.html %}
-	</body>
-</html>
+---
+layout: base
+---
+<main>
+	{{content}}
+</main>
