@@ -62,10 +62,10 @@ a.button,
 button {
 	--button-angle-width: 0.4em;
 	--button-height: 2em;
-	--button-background: var(--theme-secondary-background);
-	--button-hover-background: var(--theme-secondary-light-background);
-	--button-active-background: var(--theme-secondary-dark-background);
-	--button-color: var(--theme-secondary-color);
+	--button-background: var(--theme-tertiary-background);
+	--button-hover-background: var(--theme-tertiary-light-background);
+	--button-active-background: var(--theme-primary-dark-background);
+	--button-color: var(--theme-tertiary-color);
 	
 	position: relative;
 	margin: 0 var(--button-angle-width);
