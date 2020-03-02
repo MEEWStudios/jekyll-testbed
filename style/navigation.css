@@ -1,0 +1,75 @@
+header {
+	--navigation-height: 3.75rem;
+	--navigation-angle-width: 0.85rem;
+	--navigation-spacing: 0.2rem;
+	--navigation-background: var(--theme-secondary-background);
+	--navigation-hover-background: var(--theme-secondary-light-background);
+	--navigation-active-background: var(--theme-secondary-dark-background);
+	--navigation-color: var(--theme-secondary-color);
+	
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	display: flex;
+	background: var(--theme-primary-background);
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+	user-select: none;
+	z-index: 1;
+}
+
+header a {
+	position: relative;
+	display: inline-flex;
+	margin-right: calc(var(--navigation-angle-width) + var(--navigation-spacing));
+	padding: 0 1.25em;
+	height: var(--navigation-height);
+	background: var(--navigation-background);
+	color: var(--navigation-color);
+	font-size: 1.1em;
+	font-weight: 400;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+header a:first-child {
+	margin-left: calc(var(--navigation-angle-width) + var(--navigation-spacing));
+}
+
+header a::before,
+header a::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	pointer-events: none;
+}
+
+header a::before {
+	left: calc(-1 * var(--navigation-angle-width));
+	border-bottom: var(--navigation-height) solid var(--navigation-background);
+	border-left: var(--navigation-angle-width) solid transparent;
+}
+
+header a::after {
+	right: calc(-1 * var(--navigation-angle-width));
+	border-right: var(--navigation-angle-width) solid transparent;
+	border-top: var(--navigation-height) solid var(--navigation-background);
+}
+
+header a:hover {
+	--navigation-background: var(--navigation-hover-background);
+}
+
+header a:active {
+	--navigation-background: var(--navigation-active-background);
+}
+
+header a.active {
+	--navigation-background: var(--theme-tertiary-background);
+	--navigation-color: var(--theme-tertiary-color);
+	
+	font-weight: 500;
+}
+
+header a div {
+	margin: auto;
+}
