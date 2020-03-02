@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset='UTF8'>
+		<title>{% if page.title %}{{page.title}} - {% endif %}{{site.title}}</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap' rel='stylesheet'>
+		<link href='{{site.baseurl}}/style/index.css' rel='stylesheet'>
+		<script src='{{site.baseurl}}/script/index.js'></script>
+	</head>
+	<body>
+		<header>
+			<a href='{{site.baseurl}}/'><div>Home</div></a>
+			<a href='{{site.baseurl}}/about.html'><div>About</div></a>
+			<a href='{{site.baseurl}}/members.html'><div>Members</div></a>
+			<a href='{{site.baseurl}}/art.html'><div>Concept Art</div></a>
+			<a href='{{site.baseurl}}/development/' data-loose><div>Development Blog</div></a>
+			<a href='{{site.baseurl}}/final.html'><div>Final Game</div></a>
+		</header>
+		<main>
+			{% for section in page.sections %}
+			<h1>{{section[0]}}</h1>
+			<div class='container'>
+				{{section[1] | textilize}}
+			</div>
+			{% endfor %}
+		</main>
+		<footer>
+			<div>MEEWStudios</div>
+			<div>Part of an ICS 485 assignment.</div>
+		</footer>
+	</body>
+</html>
