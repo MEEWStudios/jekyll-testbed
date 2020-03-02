@@ -12,7 +12,7 @@ title: Development Blog
 		</div>
 		{{post.content | truncatewords: 40}}
 		<div>
-			<a class='button' href='{{page.url}}'>Read</a>
+			<a class='button' href='{{post.url}}'>Read</a>
 		</div>
 	</div>
 	{% endunless %}
