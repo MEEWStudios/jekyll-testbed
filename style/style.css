@@ -114,30 +114,11 @@ button:active {
 }
 
 footer {
-	--footer-peek-height: 1em;
 	--footer-line-height: 1.6em;
-	--footer-lines: 2;
 	
-	position: -webkit-sticky;
-	position: sticky;
-	bottom: calc(calc(-1 * var(--page-element-padding) * 2 - var(--footer-line-height) * var(--footer-lines)) + var(--footer-peek-height));
 	margin-top: 0.75em;
 	padding: var(--page-element-padding) var(--page-margin);
 	background: var(--theme-primary-dark-background);
 	line-height: var(--footer-line-height);
-	transition: bottom 125ms;
 	user-select: none;
-}
-
-footer:hover {
-	bottom: 0;
-}
-
-footer:hover::before {
-	content: '';
-	position: absolute;
-	top: -3em;
-	left: 0;
-	width: 100%;
-	height: 3em;
 }

@@ -1,10 +1,10 @@
 header {
 	--navigation-height: 3.75rem;
 	--navigation-angle-width: 0.85rem;
-	--navigation-spacing: 0.2rem;
-	--navigation-background: var(--theme-secondary-background);
-	--navigation-hover-background: var(--theme-secondary-light-background);
-	--navigation-active-background: var(--theme-secondary-dark-background);
+	--navigation-spacing: 0rem;
+	--navigation-background: transparent;
+	--navigation-hover-background: var(--theme-primary-dark-background);
+	--navigation-active-background: var(--theme-primary-light-background);
 	--navigation-color: var(--theme-secondary-color);
 	
 	position: -webkit-sticky;
@@ -12,11 +12,11 @@ header {
 	top: 0;
 	display: flex;
 	background: var(--theme-primary-background);
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
 	user-select: none;
 	z-index: 1;
 }
 
+header span,
 header a {
 	position: relative;
 	display: inline-flex;
@@ -31,7 +31,8 @@ header a {
 	box-sizing: border-box;
 }
 
-header a:first-child {
+header a:first-child,
+header span:first-child {
 	margin-left: calc(var(--navigation-angle-width) + var(--navigation-spacing));
 }
 

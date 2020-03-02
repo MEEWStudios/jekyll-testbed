@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset='UTF8'>
-		<title>{{page.title}}</title>
+		<title>{% if page.title %}{{page.title}} - {% endif %}{{site.title}}</title>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap' rel='stylesheet'>
 		<link href='{{site.baseurl}}/style/index.css' rel='stylesheet'>
 		<script src='{{site.baseurl}}/script/index.js'></script>
@@ -11,7 +11,10 @@
 		<header>
 			<a href='{{site.baseurl}}/'><div>Home</div></a>
 			<a href='{{site.baseurl}}/about.html'><div>About</div></a>
-			<a href='{{site.baseurl}}/development/' data-loose><div>Assignments</div></a>
+			<a href='{{site.baseurl}}/members.html'><div>Members</div></a>
+			<a href='{{site.baseurl}}/art.html'><div>Concept Art</div></a>
+			<a href='{{site.baseurl}}/development/' data-loose><div>Development Blog</div></a>
+			<a href='{{site.baseurl}}/final.html'><div>Final Game</div></a>
 		</header>
 		{{content}}
 		<footer>

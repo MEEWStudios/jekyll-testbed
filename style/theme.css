@@ -1,15 +1,14 @@
 :root {
 	/* Theme Colors */
-	/* F44336 E6B347 E8EDBA 4BB19E 312A60 */
-	--theme-primary-background: #2D1E53;
-	--theme-primary-light-background: #4C3C75;
-	--theme-primary-dark-background: #180842;
-	--theme-primary-color: #FFF;
+	--theme-primary-background: #E4F9E7;
+	--theme-primary-light-background: #FFF;
+	--theme-primary-dark-background: #80CC86;
+	--theme-primary-color: #000;
 	--theme-secondary-background: #52CFDD;
 	--theme-secondary-light-background: #81DCE6;
 	--theme-secondary-dark-background: #44AAB5;
 	--theme-secondary-color: #000;
-	--theme-tertiary-background: #F9BD4D;
+	--theme-tertiary-background: #F9BDBE;
 	--theme-tertiary-light-background: #FAC96D;
 	--theme-tertiary-color: #000;
 	
