@@ -17,15 +17,10 @@
 			<a href='{{site.baseurl}}/final.html'><div>Final Game</div></a>
 		</header>
 		<main>
-			{% for section in page.sections %}
-			<h1>{{section[0]}}</h1>
-			<div class='container'>
-				{{section[1] | markdownify}}
-			</div>
-			{% endfor %}
+			{{content}}
 		</main>
 		<footer>
-			<div>MEEWStudios, Spring 2020</div>
+			<div>MEEWStudios</div>
 			<div>Part of an ICS 485 assignment.</div>
 		</footer>
 	</body>
