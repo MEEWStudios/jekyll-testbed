@@ -18,7 +18,7 @@ ul {
 	--list-bullet-height: 0.625em;
 	--list-bullet-offset: 0.4em;
 	--list-bullet-indent: 1em;
-	--list-background: #FFF;
+	--list-background: var(--theme-tertiary-background);
 	
 	padding-inline-start: calc(var(--list-bullet-angle-width) * 3 + var(--list-bullet-offset) + var(--list-bullet-indent));
 }
