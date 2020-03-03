@@ -16,6 +16,10 @@ header {
 	z-index: 1;
 }
 
+header > img {
+	height: var(--navigation-height);
+}
+
 header > div,
 header a {
 	position: relative;
