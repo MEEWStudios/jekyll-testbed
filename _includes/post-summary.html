@@ -1,6 +1,6 @@
 <div class='container title'>
 	<div>
-		<h2>{{include.post.date | date_to_string}}</h2><h2>{{include.post.title}}</h2>
+		<h2>{{include.post.date | date: '%b %-d'}}</h2><h2>{{include.post.title}}</h2>
 	</div>
 	<p>
 		{{include.post.content | markdownify | strip_html | truncatewords: 40}}
