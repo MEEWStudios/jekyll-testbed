@@ -4,13 +4,13 @@
 	--theme-primary-light-background: #FFF;
 	--theme-primary-dark-background: #80CC86;
 	--theme-primary-color: #000;
-	--theme-secondary-background: #52CFDD;
-	--theme-secondary-light-background: #81DCE6;
+	--theme-tertiary-background: #CBE294;
+	--theme-tertiary-light-background: #DEECBB;
+	--theme-tertiary-color: #000;
+	--theme-secondary-background: #D7D7D7;
+	--theme-secondary-light-background: #F0F0F0;
 	--theme-secondary-dark-background: #44AAB5;
 	--theme-secondary-color: #000;
-	--theme-tertiary-background: #F9BDBE;
-	--theme-tertiary-light-background: #FDECED;
-	--theme-tertiary-color: #000;
 	
 	/* Page */
 	--page-margin: 6rem;

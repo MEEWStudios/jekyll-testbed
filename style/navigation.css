@@ -3,9 +3,9 @@ header {
 	--navigation-angle-width: 0.85rem;
 	--navigation-spacing: 0rem;
 	--navigation-background: transparent;
-	--navigation-hover-background: var(--theme-primary-dark-background);
-	--navigation-active-background: var(--theme-primary-light-background);
-	--navigation-color: var(--theme-secondary-color);
+	--navigation-hover-background: var(--theme-tertiary-background);
+	--navigation-active-background: var(--theme-tertiary-light-background);
+	--navigation-color: var(--theme-primary-color);
 	
 	position: -webkit-sticky;
 	position: sticky;
@@ -76,8 +76,8 @@ header a:active {
 }
 
 header a.active {
-	--navigation-background: var(--theme-tertiary-background);
-	--navigation-color: var(--theme-tertiary-color);
+	--navigation-background: var(--theme-primary-dark-background);
+	--navigation-color: var(--theme-primary-color);
 	
 	font-weight: 500;
 }

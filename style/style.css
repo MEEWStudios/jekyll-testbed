@@ -62,10 +62,10 @@ a.button,
 button {
 	--button-angle-width: 0.4em;
 	--button-height: 2em;
-	--button-background: var(--theme-tertiary-background);
-	--button-hover-background: var(--theme-tertiary-light-background);
+	--button-background: var(--theme-secondary-background);
+	--button-hover-background: var(--theme-secondary-light-background);
 	--button-active-background: var(--theme-primary-dark-background);
-	--button-color: var(--theme-tertiary-color);
+	--button-color: var(--theme-secondary-color);
 	
 	position: relative;
 	margin: 0 var(--button-angle-width);
@@ -78,29 +78,6 @@ button {
 	box-sizing: border-box;
 	cursor: pointer;
 	user-select: none;
-}
-
-a.button::before,
-a.button::after,
-button::before,
-button::after {
-	content: '';
-	position: absolute;
-	top: 0;
-}
-
-a.button::before,
-button::before {
-	left: calc(-1 * var(--button-angle-width));
-	border-bottom: var(--button-height) solid var(--button-background);
-	border-left: var(--button-angle-width) solid transparent;
-}
-
-a.button::after,
-button::after {
-	right: calc(-1 * var(--button-angle-width));
-	border-right: var(--button-angle-width) solid transparent;
-	border-top: var(--button-height) solid var(--button-background);
 }
 
 a.button:hover,
