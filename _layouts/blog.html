@@ -4,7 +4,7 @@ layout: base
 <main>
 	<h1>{{page.title}}</h1>
 	<div style='margin-bottom: 0.5rem;'>
-		Written {% if page.author %}by <span style='font-weight: 500;'>{{page.author}}</span> {% endif %}on <span style='color: rgba(0, 0, 0, 0.7);'>{{page.date | date_to_string}}</span>
+		Written {% if page.author %}by <span style='font-weight: 500;'>{{page.author}}</span> {% endif %}on <span style='color: rgba(0, 0, 0, 0.7);'>{{page.date | date: '%B %-d, %Y'}}</span>
 	</div>
 	<div class='container'>
 		{{page.content | markdownify}}
