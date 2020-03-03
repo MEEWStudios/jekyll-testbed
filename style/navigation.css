@@ -26,7 +26,7 @@ header a {
 	position: relative;
 	display: inline-flex;
 	margin-right: calc(var(--navigation-angle-width) + var(--navigation-spacing));
-	padding: 0 1.25em;
+	padding: 0 var(--page-element-padding);
 	background: var(--navigation-background);
 	color: var(--navigation-color);
 	font-size: 1.1em;
