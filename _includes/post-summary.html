@@ -3,7 +3,7 @@
 		<h2>{{include.post.date | date: '%b %-d'}}</h2><h2>{{include.post.title}}</h2>
 	</div>
 	<p>
-		{{include.post.content | markdownify | strip_html | truncatewords: 40}}
+		{{include.post.content | markdownify | strip_html | truncatewords: 80}}
 	</p>
 	<div>
 		{% assign post_file_extension = include.post.url | slice: -5, 5 %}
