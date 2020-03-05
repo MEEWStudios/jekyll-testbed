@@ -1,5 +1,6 @@
 ---
 layout: base
+head: <link href='{{site.baseurl}}/style/blog.css' rel='stylesheet'>
 title: Development Blog
 ---
 <main>

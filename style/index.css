@@ -2,7 +2,6 @@
 @import 'element.css';
 @import 'navigation.css';
 @import 'style.css';
-@import 'blog.css';
 
 /* Wondering why url() wasn't used here? */
 /* See the MDN reference for @import */

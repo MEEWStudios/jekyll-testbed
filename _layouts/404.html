@@ -1,0 +1,58 @@
+---
+layout: base
+head: |
+  <style type='text/css'>
+  	html {
+  		font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  		text-align: center;
+  	}
+  
+  	html,
+  	body {
+  		margin: 0;
+  		padding: 0;
+  	}
+  
+  	body {
+  		color: #444;
+  	}
+  
+  	a {
+  		color: #42A5F5;
+  		text-decoration: none;
+  	}
+  
+  	.error-box {
+  		padding: 10px 0 20px;
+  		background: #E3F2FD;
+  		text-align: center;
+  	}
+  
+  	.code {
+  		padding: 2px 5px;
+  		background: #EEE;
+  		font-family: monospace;
+  		border-radius: 2px;
+  	}
+  
+  	.error-header {
+  		margin: 20px;
+  		font-size: 72px;
+  		color: #2196F3;
+  	}
+  
+  	.error-detail {
+  		margin-bottom: 30px;
+  		font-size: 16px;
+  		color: #64B5F6;
+  	}
+  </style>
+---
+<main>
+	<div class='error-box'>
+		<div class='error-header'>We couldn't find that!</div>
+		<div class='error-detail'>404 Not Found</div>
+	</div>
+	<div style='margin-top: 40px;'>Sorry, that page or resource does not exist!</div>
+	<div style='margin-top: 25px;'>Try the <a href='{{site.baseurl}}/'>home page</a>.</div>
+</main>
