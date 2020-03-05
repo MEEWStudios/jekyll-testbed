@@ -22,7 +22,7 @@ header > img {
 }
 
 header > div,
-header a {
+header a:not(.button) {
 	position: relative;
 	display: inline-flex;
 	margin-right: calc(var(--navigation-angle-width) + var(--navigation-spacing));
@@ -67,8 +67,10 @@ header a::after {
 	border-top: var(--navigation-height) solid var(--navigation-background);
 }
 
-header a:hover {
+header a:not(.button):hover {
 	--navigation-background: var(--navigation-hover-background);
+	
+	text-decoration: none;
 }
 
 header a:active {
@@ -77,7 +79,7 @@ header a:active {
 
 header a.active {
 	--navigation-background: var(--theme-primary-dark-background);
-	--navigation-color: var(--theme-primary-color);
+	--navigation-color: var(--theme-primary-dark-color);
 	
 	font-weight: 500;
 }
