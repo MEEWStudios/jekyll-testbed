@@ -13,6 +13,11 @@ body {
 	background: var(--theme-primary-light-background);
 }
 
+ul,
+ol {
+	line-height: 1.5;
+}
+
 ul {
 	--list-bullet-angle-width: 0.3125em;
 	--list-bullet-height: 0.625em;
